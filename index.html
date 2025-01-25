@@ -59,6 +59,11 @@
         <p class="lead mb-5">Let's create something amazing together!</p>
       </div>
     </section>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Subscribe to my newsletter!
+    </button>
+
   </header>
   <!-- main content -->
   <main>
@@ -174,9 +179,30 @@
             I'm always open to discussing new opportunities and how we can work together to create something amazing!
           </p>
         </div>
-        <col-12 class="col-md-10 col-lg-8">
         <!-- Add form content here -->
-      </col-12>
+        <div class="col-12 col-md-10 col-lg-8 mb-4">
+        <form class="row g-3">
+          <div class="col-lg-4">
+            <label for="full-name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="full-name">
+          </div>
+          <div class="col-lg-4">
+            <label for="phone-number" class="form-label">Phone Number</label>
+            <input type="number" class="form-control" id="phone-number">
+          </div>
+          <div class="col-lg-4">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="2"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+        </div>
       </div>
     </footer>
   </main>
